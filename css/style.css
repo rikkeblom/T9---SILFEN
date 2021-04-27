@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-p {
+p,
+q {
   font-family: "Manrope", sans-serif;
 }
 
@@ -15,4 +16,13 @@ h2,
 h3,
 h4 {
   font-family: "Roboto", sans-serif;
+}
+/* TARA  */
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.hidden_sustainability {
+  display: none;
 }
