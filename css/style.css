@@ -20,3 +20,11 @@ h4 {
 .hidden {
   display: none;
 }
+
+.footEnd {
+  display: flex;
+}
+
+.footNav {
+  display: flex;
+}
