@@ -1,0 +1,83 @@
+/*temporary style*/
+header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.product-margin {
+    margin: 0 1.5rem;
+}
+
+/*product display*/
+
+.product-photo {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+}
+
+.title-and-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.colour-selection {
+    display: flex;
+}
+
+.colour-selection>div {
+    height: 2rem;
+    width: 2rem;
+    margin: 0.2rem;
+    border-radius: 50%;
+}
+
+.grey {
+    background: #575757;
+}
+
+.blue {
+    background-color: rgb(145, 174, 255);
+}
+
+input.quantity-selector {
+    border: 1px solid #888888;
+    height: 1.5rem;
+    width: 2.3rem;
+}
+
+.increase,
+.decrease {
+    border: none;
+    background-color: transparent;
+}
+
+/*suggested products*/
+.suggested-products {
+    display: flex;
+    width: 100vw;
+    overflow: hidden;
+}
+
+figure {
+    margin: 0.5rem;
+    margin-left: 0;
+}
+
+.suggested-pr-img-container {
+    width: 13rem;
+    height: 13rem;
+    overflow: hidden;
+}
+
+.suggested-pr-img-container>img {
+    width: 100%;
+    height: auto;
+}
+
+/*styles that can be used in JS*/
+.hidden {
+    display: none;
+}
