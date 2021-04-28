@@ -6,8 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CONTACT US</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
   <body>
+    <header>
+      <div class="wrap">
+        <div class="navWrap">
+          <ul>
+            <li><img src="images/logo.png" alt="Silfen logo" /></li>
+            <li><a href="">New Arrivals</a></li>
+            <li><a href="">Shop</a></li>
+            <div class="navWrapShop hidden">
+              <ul>
+                <li><a href="">Clothing</a></li>
+                <li><a href="">Bags</a></li>
+                <li><a href="">Collections</a></li>
+                <li><a href="">SILFEN PLAY</a></li>
+                <li><a href="">New Arrivals</a></li>
+                <li><a href="">Sale</a></li>
+                <li><a href="">Eco Friendly</a></li>
+              </ul>
+            </div>
+            <li><a href="">Sale</a></li>
+            <li><a href="">About Us</a></li>
+            <div class="navWrapAbout hidden">
+              <ul>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Privacy Policy </a></li>
+                <li><a href="">Terms and condition</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Sustainability</a></li>
+              </ul>
+            </div>
+            <li><a href="">SILFEN PLAY</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main id="contact_main">
       <div class="banner_img">
         <img
@@ -18,53 +53,112 @@
 
       <!-- STILL NEED TO CONNECT TO NETLIFY -->
       <h1>CONTACT US</h1>
-      <section>
-        <h2>CONTACT:</h2>
-        <p>Hello, looking for a friend to help you out?</p>
+      <div id="contact_container">
+        <section id="contact_wrap">
+          <h2>CONTACT:</h2>
+          <p>Hello, looking for a friend to help you out?</p>
 
-        <p>Please don’t hesitate to contact us!</p>
+          <p>Please don’t hesitate to contact us!</p>
 
-        <h2>Find us at:</h2>
+          <h2>Find us at:</h2>
 
-        <p>Email: info@silfenstudio.com</p>
+          <p>Email: info@silfenstudio.com</p>
 
-        <p>Call us: +45 20 51 89 23</p>
+          <p>Call us: +45 20 51 89 23</p>
 
-        <p>We strive to answer all emails within 3 business days</p>
+          <p>We strive to answer all emails within 3 business days</p>
 
-        <h2>Opening hours:</h2>
-        <p>Monday-Friday 9am-4pm</p>
+          <h2>Opening hours:</h2>
+          <p>Monday-Friday 9am-4pm</p>
 
-        <h2>Office and showroom:</h2>
-        <p>Klareboderne 10, 1. sal</p>
-        <p>1115 København K – DK</p>
+          <h2>Office and showroom:</h2>
+          <p>Klareboderne 10, 1. sal</p>
+          <p>1115 København K – DK</p>
 
-        <h2>Warehouse:</h2>
-        <p>Adax A/S, Att: Silfen Studio</p>
-        <p>Vestre Hedevej 18</p>
-        <p>DK-4000 Roskilde</p>
-      </section>
-      <form id="contact_form" name="contact" method="POST" data-netlify="true">
-        <p>
-          <label> NAME <input type="text" name="name" /></label>
-        </p>
-        <p>
-          <label>SURNAME <input type="text" name="surname" /></label>
-        </p>
-        <p>
-          <label>EMAIL <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>PHONE <input type="tel" name="phone" /></label>
-        </p>
+          <h2>Warehouse:</h2>
+          <p>Adax A/S, Att: Silfen Studio</p>
+          <p>Vestre Hedevej 18</p>
+          <p>DK-4000 Roskilde</p>
+        </section>
+<div id="green_banner">
+  <p>SEND US A MESSAGE</p>
+</div>
 
-        <p>
-          <label>MESSAGE <textarea name="message"></textarea></label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+        <form
+          id="contact_form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+        >
+          <p>
+            <label> NAME <input type="text" name="name" /></label>
+          </p>
+          <p>
+            <label>SURNAME <input type="text" name="surname" /></label>
+          </p>
+          <p>
+            <label>EMAIL <input type="email" name="email" /></label>
+          </p>
+          <p>
+            <label>PHONE <input type="tel" name="phone" /></label>
+          </p>
+
+          <p>
+            <label>MESSAGE <textarea name="message"></textarea></label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      </div>
+
+      <footer>
+        <div class="footWrap">
+    
+          <img src="images/logo.png" alt="silfen logo">
+    
+          <div class="footNewsletter">
+            <h2>Be Bold.<br> Be Unique.</h3>
+              <p>Sign up for our newsletter and save 10% on your next order!</p>
+              <form action="">
+                <input type="email" placeholder="john.doe@email.com">
+                <input type="submit" class="button">
+              </form>
+          </div>
+    
+          <div class="footSoMe">
+            <div></div>
+            <div><img src="" alt=""><img src="" alt=""><img src="" alt=""></div>
+            <div></div>
+          </div>
+    
+          <div class="footNav">
+            <div class="footNavShop">
+              <h3>Shop</h3>
+              <ul>
+                <li><a href="">SILFEN </a></li>
+                <li><a href="">SILFEN PLAY </a></li>
+                <li><a href="">New Arrivals </a></li>
+                <li><a href="">Sale </a></li>
+              </ul>
+            </div>
+            <div class="footNavInfo">
+              <h3>Information</h3>
+              <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Sustainability</a></li>
+                <li><a href="">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+    
+          <div class="footEnd">
+            <ul><a href="">Terms and Conditions</a></ul>
+            <ul><a href="">Privacy Policy</a></ul>
+            <ul><a href="">@SILFEN, 2021</a></ul>
+          </div>
+        </div>
     </main>
   </body>
 </html>

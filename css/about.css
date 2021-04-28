@@ -1,0 +1,56 @@
+#contact_container,
+#contact_form {
+  margin: 10%;
+}
+
+#green_banner {
+  background-color: var(--main-color-75);
+  padding: 0.7rem 0.9rem;
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+  box-shadow: none;
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+  width: 100%;
+  height: 10vw;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+#contact_form {
+  width: 80%;
+}
+
+/* CODE FROM W3 SCHOOL */
+input[type="text"],
+select,
+textarea,
+input[type="email"],
+input[type="tel"] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 2px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* WEB */
+@media only screen and (min-width: 901px) {
+  #about_wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
+    grid-gap: 0.5rem;
+  }
+
+  #contact_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
+    grid-gap: 0.5rem;
+  }
+}
