@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-p {
+p,
+q {
   font-family: "Manrope", sans-serif;
 }
 
@@ -27,4 +28,14 @@ h4 {
 
 .footNav {
   display: flex;
+}
+/* TARA  */
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.hidden_sustainability {
+  display: none;
 }
