@@ -1,0 +1,25 @@
+.product-list-breadcrumbs {
+    background-image: url(/img/IMG_7831.jpeg);
+    height: 10rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.filter-and-sort {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-display-pl>img {
+    width: 100%;
+    height: auto;
+}
+
+.product-list-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(12rem, 100%), 1fr));
+}
+
+.colour-box {
+    display: flex;
+}
