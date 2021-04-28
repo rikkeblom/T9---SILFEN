@@ -9,8 +9,8 @@
   --dark-grey: rgb(43, 43, 43);
   --light-grey: rgb(158, 158, 158);
 
-  --heading-font: 'Roboto', sans-serif;
-  --body-font: 'Manrope', 'Roboto', sans-serif;
+  --heading-font: "Roboto", sans-serif;
+  --body-font: "Manrope", "Roboto", sans-serif;
   --side-margin: max(2rem, 10%);
   --bottom-margin: 0.5rem;
 }

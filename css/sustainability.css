@@ -1,5 +1,49 @@
-#sustainability_container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-column: 1/-1;
+.banner_img img {
+  width: 100%;
+  max-height: 50vw;
+  height: auto;
+  object-fit: cover;
+  background-size: 100%;
+}
+.banner_img {
+  position: relative;
+}
+
+#sustainability_text {
+  position: absolute;
+  bottom: 70%;
+  color: white;
+  text-align: center;
+  width: 100%;
+  font-size: 1.8rem;
+}
+/* .sustainability_item {
+  width: 100%;
+  position: relative;
+}
+.text_on_img {
+  color: hotpink;
+  text-align: center;
+  width: 100%;
+} */
+
+p {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 10%;
+}
+/* button {
+  float: left;
+  margin-left: 10%;
+  margin-bottom: 15%;
+  margin-top: 5%;
+} */
+
+@media only screen and (min-width: 901px) {
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 1/-1;
+    grid-gap: 0.5rem;
+  }
 }
