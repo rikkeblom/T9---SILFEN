@@ -52,6 +52,11 @@ p {
   font-size: 1rem;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 /*buttons*/
 button,
 .button {
