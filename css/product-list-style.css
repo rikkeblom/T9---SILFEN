@@ -40,9 +40,7 @@
 }
 
 .product-list-display {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center; */
+    margin-top: 2rem;
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(auto-fill, minmax(min(7rem, 100%), 1fr));
@@ -50,7 +48,6 @@
 }
 
 article {
-    width: clamp(135px, 200px, 15rem);
     margin-bottom: 2rem;
 }
 
@@ -125,8 +122,9 @@ article>h2 {
 }
 
 /*media queries*/
-/*@media (min-width: 600px) {
+@media (min-width: 773px) {
     .product-list-display {
-        justify-content: start;
+        gap: 1.5rem;
+        grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
     }
-}*/
+}
