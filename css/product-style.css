@@ -18,6 +18,10 @@ header {
     margin: 0;
 }
 
+.gallery {
+    display: none;
+}
+
 .title-and-price {
     display: flex;
     justify-content: space-between;
@@ -57,7 +61,8 @@ input.quantity-selector {
 /*suggested products*/
 .suggested-products {
     display: flex;
-    width: 100vw;
+    /* width: calc(100vw - var(--side-margin)); */
+    width: 100%;
     overflow: hidden;
 }
 
@@ -80,4 +85,49 @@ figure {
 /*styles that can be used in JS*/
 .hidden {
     display: none;
+}
+
+/*media queries*/
+@media (min-width: 770px) {
+
+    header {
+        position: relative;
+    }
+
+    main {
+        margin: 0 var(--side-margin);
+    }
+
+    .product-container {
+        display: grid;
+        grid-template-columns: 4fr 1fr 3fr;
+        gap: 1rem;
+    }
+
+    .product-margin {
+        margin: 0;
+    }
+
+    .product-photo {
+        grid-column: 1/2;
+    }
+
+    .extra-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery {
+        display: block;
+        grid-column: 2/3;
+    }
+
+    .information {
+        grid-column: 3/4;
+    }
+
+    .suggestions {
+        grid-column: 1/4;
+    }
+
 }
