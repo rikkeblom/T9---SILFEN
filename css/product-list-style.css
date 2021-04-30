@@ -40,13 +40,17 @@
 }
 
 .product-list-display {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center; */
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fill, minmax(min(7rem, 100%), 1fr));
+    justify-content: center;
 }
 
 article {
-    width: max(10rem, 100px);
+    width: clamp(135px, 200px, 15rem);
     margin-bottom: 2rem;
 }
 
@@ -96,15 +100,33 @@ article>h2 {
 
 /*filter block code*/
 
+.filter-container {
+    margin: 2rem 0;
+}
+
 .filter-menu {
     display: flex;
     justify-content: space-between;
+    margin-bottom: var(--bottom-margin);
 }
 
-.colours-f,
-.materials-f,
-.sustainability-f,
-.size-f {
+.filter-menu+p {
+    font-weight: 700;
+    text-align: right;
+}
+
+.filter-category {
     display: flex;
     flex-direction: column;
 }
+
+.filter-category>label>input[type=checkbox] {
+    margin-right: 0.5rem;
+}
+
+/*media queries*/
+/*@media (min-width: 600px) {
+    .product-list-display {
+        justify-content: start;
+    }
+}*/
