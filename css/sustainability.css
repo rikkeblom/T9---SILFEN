@@ -17,14 +17,16 @@
   width: 100%;
   font-size: 1.8rem;
 }
-
+/* .banner_text {
+  margin-bottom: 25%;
+} */
 p {
-  /* margin-left: 10%; */
-  /* margin-right: 10%; */
+  margin-left: 10%;
+  margin-right: 10%;
   margin-top: 10%;
 }
 
-@media only screen and (min-width: 801px) {
+@media only screen and (min-width: 901px) {
   article {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -58,23 +60,29 @@ p {
   }
 
   .banner_text {
-    width: 80%;
+    width: 65%;
+    margin-left: 20%;
+    margin-top: 5%;
   }
 
   /* MAKES THE TEXT CENTERED, BUT IT LOOKS WEIRD? */
   p {
     width: 21em;
     text-align: justify;
-  }
-  p:after {
-    /* this adds an extra invisible line, so any other line is justified */
-    content: "";
-    display: inline-block;
-    width: 100%;
-    vertical-align: top;
-  }
 
-  #sustainability_text {
-    font-size: 4rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
   }
+}
+p:after {
+  /* this adds an extra invisible line, so any other line is justified */
+  content: "";
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+}
+
+#sustainability_text {
+  font-size: 4rem;
 }
