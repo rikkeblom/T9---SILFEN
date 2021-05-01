@@ -257,6 +257,10 @@ header a:visited {
   .navWrapAbout {
     padding-bottom: 2rem;
   }
+
+  .globalham {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -264,5 +268,18 @@ header a:visited {
   .searchIcon,
   .submenu {
     display: none;
+  }
+
+  .globalham {
+    position: absolute;
+    height: calc(100% - 5rem);
+    width: 100%;
+    background: white;
+    padding: 0 2rem;
+  }
+
+  .globalham li {
+    list-style-type: none;
+    margin: 2rem 0;
   }
 }

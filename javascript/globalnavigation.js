@@ -1,4 +1,5 @@
 window.addEventListener("load", start);
+let ham = 1;
 
 function start() {
   console.log("start");
@@ -13,6 +14,30 @@ function start() {
 
 function move() {
   console.log("open the hammenu");
+  if (ham == 1) {
+    document.querySelector(".first").classList.remove("hidden");
+    document.querySelector(".hamshop").addEventListener("click", openhamshop);
+    document.querySelector(".hamabout").addEventListener("click", openhamabout);
+    ham = ham + 1;
+  } else {
+    document.querySelector(".first").classList.add("hidden");
+    document.querySelector(".second").classList.add("hidden");
+    document.querySelector(".third").classList.add("hidden");
+    ham = ham - 1;
+  }
+}
+
+function openhamshop() {
+  console.log("open shop");
+  document.querySelector(".first").classList.add("hidden");
+  document.querySelector(".second").classList.remove("hidden");
+}
+
+function openhamabout() {
+  console.log("open shop");
+  document.querySelector(".first").classList.add("hidden");
+  document.querySelector(".second").classList.add("hidden");
+  document.querySelector(".third").classList.remove("hidden");
 }
 
 function shopMenu() {
