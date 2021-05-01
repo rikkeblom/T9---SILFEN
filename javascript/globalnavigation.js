@@ -16,8 +16,10 @@ function move() {
   console.log("open the hammenu");
   if (ham == 1) {
     document.querySelector(".first").classList.remove("hidden");
-    document.querySelector(".hamshop").addEventListener("click", openhamshop);
-    document.querySelector(".hamabout").addEventListener("click", openhamabout);
+    document.querySelector(".shoparrow").addEventListener("click", openhamshop);
+    document
+      .querySelector(".aboutarrow")
+      .addEventListener("click", openhamabout);
     ham = ham + 1;
   } else {
     document.querySelector(".first").classList.add("hidden");

@@ -114,11 +114,13 @@ header {
 .bagIcon {
   height: 1.5rem;
   width: auto;
+  cursor: pointer;
 }
 
 .searchIcon {
   height: 1.5rem;
   width: auto;
+  cursor: pointer;
 }
 
 .wrap {
@@ -137,10 +139,11 @@ header {
 }
 
 .burgerBox {
-  margin-right: 1rem;
+  margin-right: 1.2rem;
   height: 4.5rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .burgerIcon {
@@ -176,6 +179,7 @@ header {
   height: 1.5rem;
   margin: 1.5rem;
   width: auto;
+  cursor: pointer;
 }
 
 header a,
@@ -216,8 +220,8 @@ header a:visited {
   }
 
   .right {
-    width: 4rem;
-    margin-right: 1rem;
+    width: 4.5rem;
+    margin-right: 1.2rem;
   }
 
   .mainlist {
@@ -281,5 +285,38 @@ header a:visited {
   .globalham li {
     list-style-type: none;
     margin: 2rem 0;
+  }
+
+  .arrow {
+    height: 1rem;
+    width: auto;
+    cursor: pointer;
+  }
+
+  .hamshop,
+  .hamabout {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .hamsearch {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 5rem;
+  }
+
+  .searchbox {
+    width: calc(80vw - 4rem);
+    height: 2rem;
+  }
+
+  .hamsearchicon {
+    height: 2rem;
+    width: auto;
+    margin-left: 1rem;
+    cursor: pointer;
   }
 }
