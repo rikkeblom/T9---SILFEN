@@ -17,33 +17,64 @@
   width: 100%;
   font-size: 1.8rem;
 }
-/* .sustainability_item {
-  width: 100%;
-  position: relative;
-}
-.text_on_img {
-  color: hotpink;
-  text-align: center;
-  width: 100%;
-} */
 
 p {
-  margin-left: 10%;
-  margin-right: 10%;
+  /* margin-left: 10%; */
+  /* margin-right: 10%; */
   margin-top: 10%;
 }
-/* button {
-  float: left;
-  margin-left: 10%;
-  margin-bottom: 15%;
-  margin-top: 5%;
-} */
 
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 801px) {
   article {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column: 1/-1;
     grid-gap: 0.5rem;
+    margin: 10%;
+  }
+
+  .sustainability_img {
+    position: relative;
+  }
+
+  .sustainability_img::after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  .rect-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .contain {
+    margin: 15%;
+  }
+
+  .banner_img img {
+    max-height: 30vw;
+  }
+
+  .banner_text {
+    width: 80%;
+  }
+
+  /* MAKES THE TEXT CENTERED, BUT IT LOOKS WEIRD? */
+  p {
+    width: 21em;
+    text-align: justify;
+  }
+  p:after {
+    /* this adds an extra invisible line, so any other line is justified */
+    content: "";
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+
+  #sustainability_text {
+    font-size: 4rem;
   }
 }
