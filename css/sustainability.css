@@ -15,7 +15,7 @@
   color: white;
   text-align: center;
   width: 100%;
-  font-size: 1rem;
+  font-size: 1.8rem;
 }
 /* .banner_text {
   margin-bottom: 25%;
@@ -26,6 +26,11 @@ p {
   margin-top: 10%;
 }
 
+button {
+  margin-left: 10%;
+  margin-bottom: 15%;
+  margin-top: 3%;
+}
 .hidden_sustainability {
   display: none;
 }
@@ -55,7 +60,9 @@ p {
     object-fit: cover;
   }
   .contain {
-    margin: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
   }
 
   .banner_img img {
@@ -76,15 +83,20 @@ p {
     margin-right: 0;
     margin-top: 0;
   }
-}
-p:after {
-  /* this adds an extra invisible line, so any other line is justified */
-  content: "";
-  display: inline-block;
-  width: 100%;
-  vertical-align: top;
-}
 
-#sustainability_text {
-  font-size: 3rem;
+  p:after {
+    /* this adds an extra invisible line, so any other line is justified */
+    content: "";
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+  }
+
+  #sustainability_text {
+    font-size: 3rem;
+  }
+  button {
+    margin-left: 0%;
+    margin-bottom: 5%;
+  }
 }
