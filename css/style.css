@@ -125,7 +125,7 @@ footer {
   width: 100%;
 }
 
-<<<<<<< HEAD
+
 .footWrap {
   padding: 2rem;
   display: flex;
@@ -246,12 +246,7 @@ footer {
     justify-content: flex-end;
     column-gap: 4rem;
 
-=======
 
-
-
-<<<<<<< HEAD
-=======
 
 /* ----------BURGER MENU--------- */
 body {
@@ -471,7 +466,7 @@ header a:visited {
     width: auto;
     margin-left: 1rem;
     cursor: pointer;
->>>>>>> top-nav-style-and-functionality
+
   }
 }
->>>>>>> footer-style
+
