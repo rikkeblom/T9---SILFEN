@@ -1,0 +1,220 @@
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .transparentdesk,
+  .desktopbanner,
+  .indexvideo {
+    display: none;
+  }
+
+  /*SILFEN BANNER*/
+  .bannerLargeSilfen {
+    background-image: url("../images/silfenfrontpage.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    margin-bottom: 3rem;
+  }
+
+  .transparent {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1.5rem 0 1rem 0;
+    width: 100%;
+  }
+
+  .bannerLargeSilfen .transparent {
+    top: 30rem;
+  }
+
+  .bannerLargeSilfen p,
+  .bannerLargeSilfen h1,
+  .bannerLargePlay p,
+  .bannerLargePlay h1 {
+    margin: 0 2rem;
+  }
+
+  .bannerLargeSilfen button,
+  .bannerLargePlay button {
+    display: block;
+    margin: 1rem auto;
+  }
+
+  /*SILFEN PLAY BANNER*/
+  .bannerLargePlay {
+    background-image: url("../images/playbanner.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    margin-bottom: 3rem;
+  }
+
+  .playlogobanner {
+    width: max(8rem, 80%);
+    margin: 0 auto 0.5rem auto;
+    display: block;
+  }
+
+  .playtext {
+    position: absolute;
+    width: 100%;
+    top: 68rem;
+    color: white;
+  }
+
+  .bannerLargePlay .transparent {
+    top: 61rem;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .bannerLargePlay,
+  .bannerLargeSilfen {
+    display: none;
+  }
+  .videowrap {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+  }
+
+  .indexvideo {
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+/* --------- RECYCLE SLIDER --------- */
+.slider {
+  position: relative;
+  height: 26rem;
+  width: 18rem;
+  background-color: white;
+}
+
+.slider img {
+  height: 18rem;
+}
+
+.slider h2 {
+  margin-top: 0.5rem;
+}
+
+@media only screen and (max-width: 974px) {
+  .slider {
+    cursor: pointer;
+  }
+
+  .recycleSlider {
+    width: 100%;
+    overflow: hidden;
+    height: 26rem;
+    margin: 2rem 0 2rem 0;
+    position: absolute;
+    background: white;
+  }
+
+  .recycleSliderInner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: max(60rem, 100%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    pointer-events: none;
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (min-width: 975px) {
+  .recycleSlider {
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin: 5rem 0;
+  }
+
+  .recycleSliderInner {
+    width: 60rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+/*fixing layout after absolute placement*/
+footer {
+  position: absolute;
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  footer {
+    top: 120rem;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 974px) {
+  footer {
+    top: calc(90rem);
+  }
+}
+
+/* DESKTOP BANNERS */
+@media only screen and (min-width: 601px) {
+  .desklogo {
+    height: min(3rem, 3vw);
+    margin: auto;
+    display: block;
+  }
+
+  .desktopbanner {
+    height: 20rem;
+    display: flex;
+    /* margin: 2rem; */
+    column-gap: 2rem;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 65rem;
+  }
+
+  .transparentdesk {
+    height: 4rem;
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+  }
+
+  .desktopSilfen {
+    background-image: url("../images/silfenbannerdesk.jpg");
+    background-size: cover;
+    width: 40%;
+    background-color: white;
+  }
+
+  .desktopPlay {
+    background-image: url("../images/playbannerdesk.jpg");
+    background-size: cover;
+    width: 40%;
+    background-color: white;
+  }
+
+  .desktopbanner button {
+    margin: 50% auto 0 auto;
+    display: block;
+  }
+}
