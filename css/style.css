@@ -254,6 +254,7 @@ header {
   background: white;
   font-family: var(--heading-font);
   width: 100%;
+  z-index: 100;
 }
 
 .bagIcon {
@@ -425,6 +426,7 @@ header a:visited {
     width: 100%;
     background: white;
     padding: 0 2rem;
+    z-index: 100;
   }
 
   .globalham li {

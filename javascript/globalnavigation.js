@@ -13,7 +13,6 @@ function start() {
 }
 
 function move() {
-  console.log("open the hammenu");
   if (ham == 1) {
     document.querySelector(".first").classList.remove("hidden");
     document.querySelector(".shoparrow").addEventListener("click", openhamshop);
@@ -21,11 +20,13 @@ function move() {
       .querySelector(".aboutarrow")
       .addEventListener("click", openhamabout);
     ham = ham + 1;
+    console.log("Hamburger menu is open");
   } else {
     document.querySelector(".first").classList.add("hidden");
     document.querySelector(".second").classList.add("hidden");
     document.querySelector(".third").classList.add("hidden");
     ham = ham - 1;
+    console.log("Hamburger menu is closed");
   }
 }
 
