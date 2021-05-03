@@ -1,4 +1,4 @@
-/*temporary style*/
+/*header overlay*/
 header {
     position: absolute;
     left: 0;
@@ -7,7 +7,7 @@ header {
 }
 
 .product-margin {
-    margin: 0 var(--side-margin);
+    margin: 1rem var(--side-margin);
 }
 
 /*product display*/
@@ -25,6 +25,20 @@ header {
 .title-and-price {
     display: flex;
     justify-content: space-between;
+    margin-bottom: var(--bottom-margin);
+}
+
+.information>p {
+    margin-bottom: 1.2rem;
+}
+
+.information>h2 {
+    margin-bottom: 0.2rem;
+}
+
+.information>h2+div,
+.information>h2+p {
+    margin-bottom: 0.7rem;
 }
 
 .colour-selection {
@@ -50,18 +64,48 @@ input.quantity-selector {
     border: 1px solid #888888;
     height: 1.5rem;
     width: 2.3rem;
+    text-align: center;
 }
 
 .increase,
 .decrease {
     border: none;
     background-color: transparent;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.add-to-cart {
+    width: 100%;
+}
+
+.more-details {
+    margin: 2rem 0;
+}
+
+.details-title>h2 {
+    font-weight: 400;
+}
+
+.more-details>p {
+    display: none;
+}
+
+.details-title {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.details-title>img {
+    width: 0.7rem;
+    height: auto;
+    transform: rotate(45deg);
+    margin-left: 0.5rem;
 }
 
 /*suggested products*/
 .suggested-products {
     display: flex;
-    /* width: calc(100vw - var(--side-margin)); */
     width: 100%;
     overflow: hidden;
 }
@@ -82,12 +126,11 @@ figure {
     height: auto;
 }
 
-/*styles that can be used in JS*/
 .hidden {
     display: none;
 }
 
-/*media queries*/
+/* dektop media queries*/
 @media (min-width: 770px) {
 
     header {
@@ -108,7 +151,7 @@ figure {
         margin: 0;
     }
 
-    .product-photo {
+    img.product-photo {
         grid-column: 1/2;
     }
 
