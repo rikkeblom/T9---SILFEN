@@ -180,7 +180,7 @@ article>h2 {
     }
 
     .category-name>img,
-    .cross-close>img {
+    img.cross-close {
         display: none;
     }
 
@@ -208,7 +208,11 @@ article>h2 {
         margin-right: 2rem;
     }
 
-    .filter-category>label {
+    /* .filter-category>label {
+        display: none;
+    } */
+
+    .hide {
         display: none;
     }
 

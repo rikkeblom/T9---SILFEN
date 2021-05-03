@@ -5,10 +5,10 @@ const filterContainer = document.querySelector('.filter-container');
 let filterContainerOpen = false;
 
 filterBtn.addEventListener('click', unfoldFilter);
+document.querySelector('img.cross-close').addEventListener('click', unfoldFilter)
 
 function unfoldFilter() {
-
-    if (filterContainerOpen === false) {
+    if (!filterContainerOpen) {
         filterContainer.classList.remove('hidden');
         filterContainer.classList.remove('fold');
         filterContainer.classList.add('unfold');
@@ -29,17 +29,18 @@ document.querySelector('.colours-f').addEventListener('click', unfoldCategory);
 let colourClosed = true;
 
 function unfoldCategory() {
-if (colourClosed === true) {
-    console.log('color');
-    document.querySelector('.filter-category>label').style.display = 'block';
-    colourClosed = false;
-} else {
-    document.querySelector('.filter-category>label').style.display = 'none';
-    colourClosed = true;
-
+    const colourFilter = document.querySelectorAll('colour-check');
+    colourFilter.forEach(showOptions);
+    function showOptions() {
+        if (colourClosed) {
+            console.log('color');
+            document.querySelector('.filter-category>label').style.display = 'block';
+            colourClosed = false;
+        } else {
+            document.querySelector('.filter-category>label').style.display = 'none';
+            colourClosed = true;
+}}
 }
-}
-
 
 //change image on hover
 document.querySelector('.product-display-pl').addEventListener('mouseover', changeImage);
