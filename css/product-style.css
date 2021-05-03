@@ -1,9 +1,10 @@
 /*header overlay*/
-header {
+.product-page-header {
     position: absolute;
     left: 0;
     top: 0;
-    z-index: 1;
+    z-index: 100;
+    background: transparent;
 }
 
 .product-margin {
@@ -18,9 +19,9 @@ header {
     margin: 0;
 }
 
-.gallery {
+/* .gallery {
     display: none;
-}
+} */
 
 .title-and-price {
     display: flex;
@@ -60,7 +61,7 @@ header {
     background-color: rgb(145, 174, 255);
 }
 
-input.quantity-selector {
+/* input.quantity-selector {
     border: 1px solid #888888;
     height: 1.5rem;
     width: 2.3rem;
@@ -73,7 +74,7 @@ input.quantity-selector {
     background-color: transparent;
     color: black;
     font-size: 1.3rem;
-}
+} */
 
 .add-to-cart {
     width: 100%;
@@ -87,13 +88,10 @@ input.quantity-selector {
     font-weight: 400;
 }
 
-.more-details>p {
-    display: none;
-}
-
 .details-title {
     display: flex;
-    margin: 1rem 0;
+    margin: 1rem 0 0.2rem;
+    cursor: pointer;
 }
 
 .details-title>img {
