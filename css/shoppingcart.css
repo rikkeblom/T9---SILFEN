@@ -10,6 +10,7 @@ body {
   right: 0;
   background: white;
   padding: 2rem 2rem 4rem 2rem;
+  transition: ease-in 0.5s;
 }
 
 .carttotaltext {
@@ -23,6 +24,7 @@ body {
   margin: 2rem;
   float: right;
   transform: translate(2rem, -2rem);
+  cursor: pointer;
 }
 
 .separatingline {
@@ -108,4 +110,9 @@ body {
 .emptybasket button {
   display: block;
   margin: 2rem auto;
+}
+
+/*------------ANIMATION----------*/
+.opencloseshoppingcart {
+  transform: translateX(25rem);
 }
