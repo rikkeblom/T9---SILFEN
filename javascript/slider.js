@@ -58,8 +58,10 @@ function slideornoslide() {
 
 window.addEventListener("resize", slideornoslide);
 window.addEventListener("resize", movebanner);
+window.addEventListener("resize", adjustbannersize);
 window.addEventListener("load", slideornoslide);
 window.addEventListener("load", movebanner);
+window.addEventListener("load", adjustbannersize);
 
 //PLACE THE DESKTOP BANNERS
 
@@ -68,26 +70,48 @@ function movebanner() {
     console.log("MEDIUM");
     var video = document.querySelector(".videowrap");
     var videoPos = video.getBoundingClientRect();
+    let ban = document.querySelector(".deskban");
+    var banPos = ban.getBoundingClientRect();
+    var banWidth = banPos.width;
 
     let banner = document.querySelector(".desktopbanner");
-    banner.style.top = `calc(${videoPos.height}px + 3rem + 36rem)`;
+    banner.style.top = `calc(${videoPos.height}px + 3rem + 34rem)`;
     let footer = document.querySelector("footer");
-    footer.style.top = `calc(${videoPos.height}px + 3rem + 36rem + 24rem)`;
+    footer.style.top = `calc(${videoPos.height}px + ${banWidth}px + 40rem)`;
+    // console.log(`calc(${videoPos.height}px + ${banWidth}px)`);
   } else if (window.innerWidth < 600) {
-    console.log("SMALL");
+    // console.log("SMALL");
     let footer = document.querySelector("footer");
     footer.style.top = "120rem";
   } else if (window.innerWidth > 974) {
     console.log("BIG");
     var video = document.querySelector(".videowrap");
     var videoPos = video.getBoundingClientRect();
+    let ban = document.querySelector(".deskban");
+    var banPos = ban.getBoundingClientRect();
+    var banWidth = banPos.width;
 
     let banner = document.querySelector(".desktopbanner");
     var bannerPos = banner.getBoundingClientRect();
     banner.style.top = `calc(${videoPos.height}px + 3rem + 36rem)`;
 
     let footer = document.querySelector("footer");
-    footer.style.top = `calc(${videoPos.height}px + 36rem + 24rem)`;
-    console.log(`calc(${videoPos.height}px + ${bannerPos.height}px + 32rem)`);
+    footer.style.top = `calc(${videoPos.height}px + ${banWidth}px + 40rem)`;
+    // console.log(`calc(${videoPos.height}px + ${bannerPos.height}px + 32rem)`);
   }
+}
+
+function adjustbannersize() {
+  let ban = document.querySelector(".deskban");
+  let banbox = document.querySelector(".desktopbanner");
+
+  var banPos = ban.getBoundingClientRect();
+
+  //find the width of the box
+  var banWidth = banPos.width;
+
+  //set height to equal the width
+  ban.style.height = `${banWidth}px`;
+  banbox.style.height = `${banWidth}px`;
+  // console.log(`this should be the height ${banWidth}px`);
 }

@@ -212,4 +212,9 @@ footer {
     width: 40%;
     background-color: white;
   }
+
+  .desktopbanner button {
+    margin: 50% auto 0 auto;
+    display: block;
+  }
 }
