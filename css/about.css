@@ -29,25 +29,20 @@ img {
 q {
   width: 80%;
 }
-p {
+p,
+q,
+#about_info {
   text-align: justify;
-  /* THIS MAKES IT SCROLABLE TO SIDES */
-  /* margin: 5%; */
-}
-#b,
-#d {
-  margin-top: 5%;
-  margin-bottom: 8%;
 }
 
-p,
-q:after {
-  /* this adds an extra invisible line, so any other line is justified */
-  content: "";
+/* p,
+q:after { */
+/* this adds an extra invisible line, so any other line is justified */
+/* content: "";
   display: inline-block;
   width: 100%;
   vertical-align: top;
-}
+} */
 
 #sustainability_text {
   font-size: 4rem;
@@ -81,7 +76,9 @@ input[type="tel"] {
   width: 100%;
   font-size: 1.8rem;
 }
-#about_quote {
+#about_quote,
+#d,
+#b {
   width: 80%;
   margin-left: 10%;
   margin-top: 8%;
@@ -101,10 +98,9 @@ input[type="tel"] {
   #about_wrap {
     display: grid;
     grid-template-areas:
-      "bbb bbb"
-      "aaa ccc";
+      "a b"
+      "d c";
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 40px;
   }
 
   #contact_container {
@@ -116,21 +112,32 @@ input[type="tel"] {
     /* margin-left: 80px;
     margin-right: 80px; */
   }
+
+  #b,
+  #d {
+    justify-self: center;
+    margin-bottom: 8%;
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 15%;
+    margin-bottom: 8%;
+  }
+
   #green_banner {
     display: none;
   }
 
   #a {
-    grid-area: aaa;
+    grid-area: a;
   }
   #b {
-    grid-area: bbb;
+    grid-area: b;
   }
   #c {
-    grid-area: ccc;
+    grid-area: c;
   }
   #d {
-    grid-area: ddd;
+    grid-area: d;
   }
   #contact_wrap {
     grid-area: cont;
