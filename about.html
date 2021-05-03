@@ -6,8 +6,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ABOUT US</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
   <body>
+    <header>
+      <div class="wrap">
+        <div class="navWrap">
+          <img class="navLogo" src="images/logo.png" alt="Silfen logo" />
+          <ul>
+            <li><a class="new" href="product-list.html">New Arrivals</a></li>
+            <li><a class="shop" href="product-list.html">Shop</a></li>
+            <li><a class="sale" href="product-list.html">Sale</a></li>
+            <li><a class="about" href="about.html">About Us</a></li>
+            <li>
+              <a class="play" href=""
+                ><img
+                  class="playLogo"
+                  src="images/playlogo.png"
+                  alt="SILFEN PLAY logo"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="right close">
+          <img
+            class="searchIcon"
+            src="images/magnifyingglass.png"
+            alt="search icon"
+          />
+          <img class="bagIcon" src="images/bag rounded.png" alt="bag icon" />
+          <div class="burgerBox"><span class="burgerIcon"></span></div>
+        </div>
+      </div>
+      <div class="navWrapShop hidden submenu">
+        <ul class="mainlist">
+          <li>
+            <a href="">Bags</a>
+            <ul class="types">
+              <li><a href="product-list.html">Crossbody bags</a></li>
+              <li><a href="product-list.html">Shoulder bags</a></li>
+              <li><a href="product-list.html">Mini bags</a></li>
+              <li><a href="product-list.html">Tote bags</a></li>
+              <li><a href="product-list.html">Bumbags</a></li>
+              <li><a href="product-list.html">Wallets</a></li>
+              <li><a href="product-list.html">Care Products</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Clothing</a>
+            <ul class="types">
+              <li><a href="product-list.html">Tops</a></li>
+              <li><a href="product-list.html">Bottoms</a></li>
+              <li><a href="product-list.html">Accessories</a></li>
+              <li><a href="product-list.html">Accessories</a></li>
+              <li><a href="product-list.html">Bags</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="product-list.html">Collections</a>
+            <ul class="types">
+              <li><a href="product-list.html">Snow Queen</a></li>
+              <li><a href="product-list.html">Recycle</a></li>
+              <li><a href="product-list.html">Classics</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <ul class="specials">
+              <li><a href="">SILFEN PLAY</a></li>
+              <li><a href="product-list.html">New Arrivals</a></li>
+              <li><a href="product-list.html">Sale</a></li>
+              <li><a href="product-list.html">Eco Friendly</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="navWrapAbout hidden submenu">
+        <ul class="mainlist">
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Privacy Policy </a></li>
+          <li><a href="#">Terms and condition</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+        </ul>
+      </div>
+      <div class="globalham first hidden">
+        <ul>
+          <li><a class="hamnew" href="product-list.html">New Arrivals</a></li>
+          <li class="hamshop">
+            <a href="product-list.html">Shop</a
+            ><img
+              class="arrow shoparrow"
+              src="images/openfat.png"
+              alt="open arrow"
+            />
+          </li>
+          <li><a class="hamsale" href="product-list.html">Sale</a></li>
+          <li class="hamabout">
+            <a href="about.html">About</a
+            ><img
+              class="arrow aboutarrow"
+              src="images/openfat.png"
+              alt="open arrow"
+            />
+          </li>
+          <li>
+            <a class="hamplay" href=""
+              ><img
+                class="playLogo"
+                src="images/playlogo.png"
+                alt="SILFEN PLAY logo"
+            /></a>
+          </li>
+        </ul>
+        <div class="hamsearch">
+          <input class="searchbox" type="text" placeholder="Search" />
+          <img
+            class="hamsearchicon"
+            src="images/magnifyingglass.png"
+            alt="search icon"
+          />
+        </div>
+      </div>
+      <div class="globalham hidden second">
+        <ul>
+          <li><a href="product-list.html">Bags</a></li>
+          <li><a href="product-list.html">Clothes</a></li>
+          <li><a href="product-list.html">Collections</a></li>
+          <li><a href="product-list.html">New Arrivals</a></li>
+          <li><a href="product-list.html">Sale</a></li>
+          <li><a href="product-list.html">Eco Friendly</a></li>
+          <li>
+            <a href=""
+              ><img
+                class="playLogo"
+                src="images/playlogo.png"
+                alt="SILFEN PLAY logo"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="globalham hidden third">
+        <ul class="mainlist">
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Privacy Policy </a></li>
+          <li><a href="#">Terms and condition</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+        </ul>
+      </div>
+    </header>
     <main id="about_main">
       <div class="banner_img">
         <img
@@ -17,8 +165,8 @@
       </div>
 
       <section id="about_info">
-        <h1>ABOUT US</h1>
-        <article>
+        <h1 id="about_text">ABOUT US</h1>
+        <article id="about_quote">
           <q>
             Sustainability is a fuzzy word. At SILFEN it means putting action
             behind the words, considering all stakeholders and always aiming a
@@ -29,14 +177,17 @@
           <h3>- Celine Silfen</h3>
         </article>
       </section>
-      <article>
+      <div id="about_wrap">
+        <!-- <article> -->
         <div class="about_img">
           <img
+            id="a"
             src="images/about_daniel-silfen-foto.jpg"
             alt="image of the silfen team standing together"
           />
         </div>
-        <p>
+
+        <p id="b" style="border-bottom: #000000 solid thin">
           Silfen is a Danish accesorry brand established in 2013. The brand is
           characterized by high quality products created in genuine materials.
           The primary focus is on designing products that reflect the trends of
@@ -46,15 +197,18 @@
           filled with beautiful bags. They love the build up the brands DNA with
           a new and playful aesthetic towards the key accesory - the bag.
         </p>
-      </article>
-      <article>
+
+        <!-- </article>
+        <article> -->
         <div class="about_img">
           <img
+            id="c"
             src="images/about.jpeg"
             alt="image of the silfen team standing together"
           />
         </div>
-        <p>
+
+        <p id="d" style="border-bottom: #000000 solid thin">
           In the future, silfen is working on colorful designs in different
           kinds of material. They love to play with textures and a wide range of
           materials in order to challenge their own perception of creating new
@@ -63,7 +217,69 @@
           with the brand is to offer high quality products in a though through
           design at reasonable prices.
         </p>
-      </article>
+        <!-- </article> -->
+      </div>
+
+      <footer>
+        <img class="footlogo" src="images/logo.png" alt="silfen logo" />
+        <div class="footWrap">
+          <div class="footNewsletter">
+            <h2>Be Bold.</h2>
+            <h2>Be Unique.</h2>
+            <p>Sign up for our newsletter and save 10% on your next order!</p>
+            <form action="">
+              <input
+                class="emailfield"
+                type="email"
+                placeholder="john.doe@email.com"
+              />
+              <input class="blackbutton" type="submit" class="button" />
+            </form>
+          </div>
+          <div class="footSoMe">
+            <h3>Follow Us</h3>
+            <div class="footSoMeFlex">
+              <div class="div"></div>
+              <div class="SoMeIcons">
+                <img src="images/fb.svg" alt="Facebook Logo" />
+                <img src="images/ig.svg" alt="Instagram Logo" />
+                <img src="images/YT.svg" alt="YouTube Logo" />
+              </div>
+              <div class="div"></div>
+            </div>
+          </div>
+          <div class="footNav">
+            <div class="footNavShop">
+              <h3>Shop</h3>
+              <ul>
+                <li><a href="product-list.html">SILFEN </a></li>
+                <li><a href="">SILFEN PLAY </a></li>
+                <li><a href="product-list.html">New Arrivals </a></li>
+                <li><a href="product-list.html">Sale </a></li>
+              </ul>
+            </div>
+            <div class="footNavInfo">
+              <h3>Information</h3>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="sustainability.html">Sustainability</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footEnd">
+          <a href="">Terms and Conditions</a>
+          <div class="divider"></div>
+          <a href="">Privacy Policy</a>
+          <div class="divider"></div>
+          <a href="">@SILFEN, 2021</a>
+        </div>
+      </footer>
+      <script src="javascript/slider.js"></script>
+      <script src="javascript/globalnavigation.js"></script>
+      <script src="javascript/shoppingcart.js"></script>
     </main>
   </body>
 </html>
