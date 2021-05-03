@@ -16,79 +16,283 @@
         <h1>A place for header</h1>
     </header>
     <main>
-        <div class="product-list-breadcrumbs hidden">
+        <div class="product-list-breadcrumbs">
             <a href="#">
-                <p class="first-bc">Bags</p>
+                <p class="first-bc">Bags </p>
             </a>
-            <p class="second-bc">Handbags</p>
+            <p class="second-bc"> / Handbags</p>
         </div>
-        <div class="filter-and-sort">
-            <div class="filter-option">
-                <p>Filter</p>
-                <img src="" alt="">
-            </div>
-            <div class="sort-option">
-                <p>Sort by</p>
-                <img src="" alt="">
-            </div>
-        </div>
-        <section class="product-list-display">
-            <article class="product-display-pl">
-                <img src="img/516910_GREEN ASH_FRONT.JPG" alt="">
-                <h1>Siri</h1>
-                <h2><span>150</span> DKK</h2>
-                <div class="colour-box">
-                    <div class="grey"></div>
-                    <div class="blue"></div>
-                    <div class="yellow"></div>
-
+        <div class="product-margin">
+            <div class="filter-and-sort">
+                <div class="filter-option options-pl">
+                    <p>Filter</p>
+                    <img src="img/filter-menu.svg" alt="" class="icons-pl">
                 </div>
-            </article>
-            <article class="product-display-pl">
-                <img src="img/516952_WATERGREEN_FRONT.JPG" alt="">
-                <h1>Ulrikke</h1>
-                <h2><span>150</span> DKK</h2>
-                <div class="colour-box"></div>
-            </article>
-            <article class="product-display-pl">
-                <img src="img/517323_BLUE BERRY_SIDE.JPG" alt="">
-                <h1>Cille</h1>
-                <h2><span>150</span> DKK</h2>
-                <div class="colour-box"></div>
-            </article>
-            <article class="product-display-pl">
-                <img src="img/517323_CHAMPAGNE_BACK.JPG" alt="">
-                <h1>Ulla</h1>
-                <h2><span>150</span> DKK</h2>
-                <div class="colour-box"></div>
-            </article>
-            <article class="product-display-pl">
-                <img src="img/516910_GREEN ASH_FRONT.JPG" alt="">
-                <h1>Siri</h1>
-                <h2><span>150</span> DKK</h2>
-                <div class="colour-box"></div>
-            </article>
-            <article class="product-display-pl">
-                <img src="img/516952_WATERGREEN_FRONT.JPG" alt="">
-                <h1>Ulrikke</h1>
-                <h2><span>150</span> DKK</h2>
-                <div class="colour-box"></div>
-            </article>
-            <article class="product-display-pl">
-                <img src="img/517323_BLUE BERRY_SIDE.JPG" alt="">
-                <h1>Cille</h1>
-                <h2><span>150</span> DKK</h2>
-                <div class="colour-box"></div>
-            </article>
-            <article class="product-display-pl">
-                <img src="img/517323_CHAMPAGNE_BACK.JPG" alt="">
-                <h1>Ulla</h1>
-                <h2><span>150</span> DKK</h2>
-                <div class="colour-box"></div>
-            </article>
-        </section>
+                <div class="sort-option options-pl">
+                    <p>Sort by</p>
+                    <img src="img/arrow-sharp.svg" alt="" class="icons-pl">
+                </div>
+            </div>
+            <div class="filter-container hidden">
+                <img src="img/cross sharp.svg" alt="" class="cross-close">
+                <div class="filter-menu">
+
+                    <div class="colours-f filter-category">
+                        <div class="category-name">
+                            <h3>Colours</h3>
+                            <img src="img/arrow-sharp-v2.svg" alt="">
+                        </div>
+
+                        <label for="blue-f" class="colour-check hide"><input type="checkbox" id="blue-f" name="blue-f"
+                                value="Blue">Blue</label>
+
+                        <label for="red-f" class="colour-check hide"><input type="checkbox" id="red-f" name="red-f"
+                                value="Red">Red</label>
+
+                        <label for="yellow-f" class="colour-check hide"><input type="checkbox" id="yellow-f"
+                                name="yellow-f" value="Yellow">Yellow</label>
+
+                        <label for="black-f" class="colour-check hide"><input type="checkbox" id="black-f"
+                                name="black-f" value="Black">Black</label>
+                    </div>
+                    <div class="materials-f filter-category">
+                        <div class="category-name">
+                            <h3>Materials</h3>
+                            <img src="img/arrow-sharp-v2.svg" alt="">
+                        </div>
+
+                        <label for="nylon-f"><input type="checkbox" id="nylon-f" name="nylon-f"
+                                value="Nylon">Nylon</label>
+
+                        <label for="silk-f"><input type="checkbox" id="silk-f" name="silk-f" value="Silk">Silk</label>
+
+                        <label for="leather-f"><input type="checkbox" id="leather-f" name="leather-f"
+                                value="Leather">Leather</label>
+
+                        <label for="cotton-f"><input type="checkbox" id="cotton-f" name="cotton-f"
+                                value="Cotton">Cotton</label>
+
+                        <label for="knitwear-f"><input type="checkbox" id="knitwear-f" name="knitwear-f"
+                                value="Knitwear">Knitwear</label>
+
+                        <label for="aluminium-f"><input type="checkbox" id="aluminium-f" name="aluminium-f"
+                                value="Aluminium">Aluminium</label>
+                    </div>
+                    <div class="sustainability-f filter-category">
+                        <div class="category-name">
+                            <h3>Sustainability</h3>
+                            <img src="img/arrow-sharp-v2.svg" alt="">
+                        </div>
+
+                        <label for="eco-nylon-f"><input type="checkbox" id="eco-nylon-f" name="eco-nylon-f"
+                                value="Eco nylon">Eco nylon</label>
+
+                        <label for="vegan-f"><input type="checkbox" id="vegan-f" name="vegan-f"
+                                value="Vegan">Vegan</label>
+
+                        <label for="organic-f"><input type="checkbox" id="organic-f" name="organic-f"
+                                value="Organic">Organic</label>
+
+                        <label for="recycled-f"><input type="checkbox" id="recycled-f" name="recycled-f"
+                                value="Recycled">Recycled</label>
+                    </div>
+                    <div class="size-f filter-category">
+                        <div class="category-name">
+                            <h3>Size</h3>
+                            <img src="img/arrow-sharp-v2.svg" alt="">
+                        </div>
+                        <label for="size-s-f"><input type="checkbox" id="size-s-f" name="size-s-f" value="S">S</label>
+                        <label for="size-m-f"><input type="checkbox" id="size-m-f" name="size-m-f" value="M">M</label>
+                        <label for="size-l-f"><input type="checkbox" id="size-l-f" name="size-l-f" value="L">L</label>
+                    </div>
+                </div>
+                <p>Remove all X</p>
+            </div>
+            <section class="product-list-display">
+                <a href="product-page.html">
+                    <article class="product-display-pl">
+                        <img src="https://silfenstudio.com/wp-content/uploads/2020/11/517352_LIGHT-PURPLE_FRONT-1.jpg"
+                            alt="">
+                        <h1>Siri</h1>
+                        <h2><span>150</span> DKK</h2>
+                        <div class="colour-box">
+                            <div class="grey"></div>
+                            <div class="blue"></div>
+                            <div class="yellow"></div>
+                            <div class="red"></div>
+                        </div>
+                    </article>
+                </a>
+                <article class="product-display-pl">
+                    <img src="img/516952_WATERGREEN_FRONT.JPG" alt="">
+                    <h1>Ulrikke</h1>
+                    <h2><span>150</span> DKK</h2>
+                    <div class="colour-box">
+                        <div class="grey"></div>
+                        <div class="blue"></div>
+                        <div class="yellow"></div>
+                        <div class="red"></div>
+                    </div>
+                </article>
+                <article class="product-display-pl">
+                    <img src="img/517323_BLUE BERRY_SIDE.JPG" alt="">
+                    <h1>Cille</h1>
+                    <h2><span>150</span> DKK</h2>
+                    <div class="colour-box">
+                        <div class="grey"></div>
+                        <div class="blue"></div>
+                        <div class="yellow"></div>
+                        <div class="red"></div>
+                    </div>
+                </article>
+                <article class="product-display-pl">
+                    <img src="img/517323_CHAMPAGNE_BACK.JPG" alt="">
+                    <h1>Ulla</h1>
+                    <h2><span>150</span> DKK</h2>
+                    <div class="colour-box">
+                        <div class="grey"></div>
+                        <div class="blue"></div>
+                        <div class="yellow"></div>
+                        <div class="red"></div>
+                    </div>
+                </article>
+                <article class="product-display-pl">
+                    <img src="img/516910_GREEN ASH_FRONT.JPG" alt="">
+                    <h1>Siri</h1>
+                    <h2><span>150</span> DKK</h2>
+                    <div class="colour-box">
+                        <div class="grey"></div>
+                        <div class="blue"></div>
+                        <div class="yellow"></div>
+                        <div class="red"></div>
+                    </div>
+                </article>
+                <article class="product-display-pl">
+                    <img src="img/516952_WATERGREEN_FRONT.JPG" alt="">
+                    <h1>Ulrikke</h1>
+                    <h2><span>150</span> DKK</h2>
+                    <div class="colour-box">
+                        <div class="grey"></div>
+                        <div class="blue"></div>
+                        <div class="yellow"></div>
+                        <div class="red"></div>
+                    </div>
+                </article>
+                <article class="product-display-pl">
+                    <img src="img/517323_BLUE BERRY_SIDE.JPG" alt="">
+                    <h1>Cille</h1>
+                    <h2><span>150</span> DKK</h2>
+                    <div class="colour-box">
+                        <div class="grey"></div>
+                        <div class="blue"></div>
+                        <div class="yellow"></div>
+                        <div class="red"></div>
+                    </div>
+                </article>
+                <article class="product-display-pl">
+                    <img src="img/517323_CHAMPAGNE_BACK.JPG" alt="">
+                    <h1>Ulla</h1>
+                    <h2><span>150</span> DKK</h2>
+                    <div class="colour-box">
+                        <div class="grey"></div>
+                        <div class="blue"></div>
+                        <div class="yellow"></div>
+                        <div class="red"></div>
+                    </div>
+                </article>
+                <article class="product-display-pl">
+                    <img src="img/516910_GREEN ASH_FRONT.JPG" alt="">
+                    <h1>Siri</h1>
+                    <h2><span>150</span> DKK</h2>
+                    <div class="colour-box">
+                        <div class="grey"></div>
+                        <div class="blue"></div>
+                        <div class="yellow"></div>
+                        <div class="red"></div>
+                    </div>
+                </article>
+                <article class="product-display-pl">
+                    <img src="img/516952_WATERGREEN_FRONT.JPG" alt="">
+                    <h1>Ulrikke</h1>
+                    <h2><span>150</span> DKK</h2>
+                    <div class="colour-box">
+                        <div class="grey"></div>
+                        <div class="blue"></div>
+                        <div class="yellow"></div>
+                        <div class="red"></div>
+                    </div>
+                </article>
+                <article class="product-display-pl">
+                    <img src="img/517323_BLUE BERRY_SIDE.JPG" alt="">
+                    <h1>Cille</h1>
+                    <h2><span>150</span> DKK</h2>
+                    <div class="colour-box">
+                        <div class="grey"></div>
+                        <div class="blue"></div>
+                        <div class="yellow"></div>
+                        <div class="red"></div>
+                    </div>
+                </article>
+                <article class="product-display-pl">
+                    <img src="img/517323_CHAMPAGNE_BACK.JPG" alt="">
+                    <h1>Ulla</h1>
+                    <h2><span>150</span> DKK</h2>
+                    <div class="colour-box">
+                        <div class="grey"></div>
+                        <div class="blue"></div>
+                        <div class="yellow"></div>
+                        <div class="red"></div>
+                    </div>
+                </article>
+                <article class="product-display-pl">
+                    <img src="img/516910_GREEN ASH_FRONT.JPG" alt="">
+                    <h1>Siri</h1>
+                    <h2><span>150</span> DKK</h2>
+                    <div class="colour-box">
+                        <div class="grey"></div>
+                        <div class="blue"></div>
+                        <div class="yellow"></div>
+                        <div class="red"></div>
+                    </div>
+                </article>
+                <article class="product-display-pl">
+                    <img src="img/516952_WATERGREEN_FRONT.JPG" alt="">
+                    <h1>Ulrikke</h1>
+                    <h2><span>150</span> DKK</h2>
+                    <div class="colour-box">
+                        <div class="grey"></div>
+                        <div class="blue"></div>
+                        <div class="yellow"></div>
+                        <div class="red"></div>
+                    </div>
+                </article>
+                <article class="product-display-pl">
+                    <img src="img/517323_BLUE BERRY_SIDE.JPG" alt="">
+                    <h1>Cille</h1>
+                    <h2><span>150</span> DKK</h2>
+                    <div class="colour-box">
+                        <div class="grey"></div>
+                        <div class="blue"></div>
+                        <div class="yellow"></div>
+                        <div class="red"></div>
+                    </div>
+                </article>
+                <article class="product-display-pl">
+                    <img src="img/517323_CHAMPAGNE_BACK.JPG" alt="">
+                    <h1>Ulla</h1>
+                    <h2><span>150</span> DKK</h2>
+                    <div class="colour-box">
+                        <div class="grey"></div>
+                        <div class="blue"></div>
+                        <div class="yellow"></div>
+                        <div class="red"></div>
+                    </div>
+                </article>
+            </section>
+        </div>
     </main>
     <footer>A place for footer</footer>
+    <script src="javascript/product-list.js"></script>
 </body>
 
 </html>
