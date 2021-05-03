@@ -8,6 +8,10 @@
 .banner_img {
   position: relative;
 }
+img {
+  max-width: 100%;
+  width: 100%;
+}
 
 #sustainability_text {
   position: absolute;
