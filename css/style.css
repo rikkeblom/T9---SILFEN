@@ -1,5 +1,3 @@
-/*Initial styling ↓*/
-
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 :root {
@@ -19,6 +17,7 @@
   margin: 0;
   box-sizing: border-box;
   padding: 0;
+  font-family: var(--body-font);
 }
 
 /*text style*/
@@ -88,16 +87,16 @@ button:active {
 
 /* TARA  */
 
-img {
+/* img {
   max-width: 100%;
   width: 100%;
-}
+} */
 
 .hidden_sustainability {
   display: none;
 }
 
-/*-------Footer---------*/
+/*--------------Footer---------------*/
 footer {
   background: var(--primary-color);
   padding-top: 2rem;
@@ -124,7 +123,6 @@ footer {
 .footNewsletter form {
   width: 100%;
 }
-
 
 .footWrap {
   padding: 2rem;
@@ -171,7 +169,7 @@ footer {
 
 .div {
   height: 2px;
-  width: 30%;
+  width: 40%;
   background: black;
   align-self: center;
 }
@@ -245,19 +243,16 @@ footer {
     width: 40%;
     justify-content: flex-end;
     column-gap: 4rem;
-
-
+  }
+}
 
 /* ----------BURGER MENU--------- */
-
-body {
-  background: pink;
-}
 
 header {
   background: white;
   font-family: var(--heading-font);
   width: 100%;
+  z-index: 100;
 }
 
 .bagIcon {
@@ -429,6 +424,7 @@ header a:visited {
     width: 100%;
     background: white;
     padding: 0 2rem;
+    z-index: 100;
   }
 
   .globalham li {
@@ -467,7 +463,5 @@ header a:visited {
     width: auto;
     margin-left: 1rem;
     cursor: pointer;
-
   }
 }
-
