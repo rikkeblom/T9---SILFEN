@@ -1,6 +1,11 @@
 #contact_container,
 #contact_form {
-  margin: 10%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+
+  /* aligns, but leaves things centered but then there is scroll */
+  /* justify-items: center; */
+  max-width: 100%;
 }
 
 img {
@@ -33,6 +38,8 @@ p,
 q,
 #about_info {
   text-align: justify;
+  justify-content: center;
+  /* border-top: #000000 solid thin; */
 }
 
 /* p,
@@ -73,6 +80,7 @@ input[type="tel"] {
   bottom: 70%;
   color: white;
   text-align: center;
+
   width: 100%;
   font-size: 1.8rem;
 }
@@ -108,6 +116,8 @@ input[type="tel"] {
     grid-template-areas: "cont form";
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 40px;
+    /* width: fixed;
+    margin: auto; */
 
     /* margin-left: 80px;
     margin-right: 80px; */
@@ -121,6 +131,7 @@ input[type="tel"] {
     margin-left: 10%;
     margin-top: 15%;
     margin-bottom: 8%;
+    border-top: #000000 solid thin;
   }
 
   #green_banner {
@@ -141,6 +152,8 @@ input[type="tel"] {
   }
   #contact_wrap {
     grid-area: cont;
+    /* justify-self: center;
+    overflow: hidden; */
   }
   #contact_form {
     grid-area: form;
