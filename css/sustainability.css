@@ -1,3 +1,7 @@
+.more {
+  display: none;
+}
+
 .banner_img img {
   width: 100%;
   max-height: 50vw;
@@ -52,6 +56,10 @@ button {
 
   .sustainability_img {
     position: relative;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 2rem 0;
   }
 
   .sustainability_img::after {
@@ -80,6 +88,10 @@ button {
     width: 65%;
     margin-left: 20%;
     margin-top: 5%;
+  }
+  .myBtn {
+    margin-left: 20%;
+    margin-top: 1%;
   }
 
   /* MAKES THE TEXT CENTERED, BUT IT LOOKS WEIRD? */
