@@ -52,21 +52,6 @@
     background-color: rgb(145, 174, 255);
 }
 
-/* input.quantity-selector {
-    border: 1px solid #888888;
-    height: 1.5rem;
-    width: 2.3rem;
-    text-align: center;
-}
-
-.increase,
-.decrease {
-    border: none;
-    background-color: transparent;
-    color: black;
-    font-size: 1.3rem;
-} */
-
 .add-to-cart {
     width: 100%;
 }
@@ -148,11 +133,12 @@ figure {
         width: 100%;
     }
 
-    .product-photo {
-        width: 100%;
+    .big-img {
+        width: auto;
+        height: 100%;
     }
 
-    .extra-img {
+    .product-photo {
         width: 100%;
         height: auto;
     }
@@ -160,6 +146,14 @@ figure {
     .gallery {
         display: block;
         grid-column: 2/3;
+    }
+
+    .gallery-img {
+        cursor: pointer;
+    }
+
+    .reduce-op {
+        opacity: 0.75;
     }
 
     .information {
