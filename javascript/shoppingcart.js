@@ -5,14 +5,10 @@ function start() {
 }
 
 function openCart() {
-  document
-    .querySelector(".shoppingcartwrapper")
-    .classList.remove("opencloseshoppingcart");
+  document.querySelector(".shoppingcartwrapper").classList.remove("hidden");
   document.querySelector(".cross").addEventListener("click", closeCart);
 }
 
 function closeCart() {
-  document
-    .querySelector(".shoppingcartwrapper")
-    .classList.add("opencloseshoppingcart");
+  document.querySelector(".shoppingcartwrapper").classList.add("hidden");
 }
