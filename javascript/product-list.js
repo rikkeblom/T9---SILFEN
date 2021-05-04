@@ -41,7 +41,7 @@ function unfoldCategory() {
             colourClosed = true;
 }}
 }
-
+/*
 //change image on hover
 document.querySelector('.product-display-pl').addEventListener('mouseover', changeImage);
 
@@ -52,4 +52,4 @@ function changeImage() {
 
 function returnImage(){
     document.querySelector('.product-display-pl>img').src='https://silfenstudio.com/wp-content/uploads/2020/11/517352_LIGHT-PURPLE_FRONT-1.jpg';
-}
+}*/
