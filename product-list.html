@@ -6,14 +6,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/product-list-style.css" />
+    <link rel="stylesheet" href="css/shoppingcart.css" />
     <link rel="shortcut icon" href="img/sortlogo.png" type="image/x-icon" />
     <title>Document</title>
   </head>
 
   <body>
     <header>
-      <h1>A place for header</h1>
+      <div class="wrap">
+        <div class="navWrap">
+          <a href="index.html"
+            ><img class="navLogo" src="images/logo.png" alt="Silfen logo"
+          /></a>
+          <ul>
+            <li><a class="new" href="product-list.html">New Arrivals</a></li>
+            <li><a class="shop" href="product-list.html">Shop</a></li>
+            <li><a class="sale" href="product-list.html">Sale</a></li>
+            <li><a class="about" href="about.html">About Us</a></li>
+            <li>
+              <a class="play" href="silfenplay.html"
+                ><img
+                  class="playLogo"
+                  src="images/playlogo.png"
+                  alt="SILFEN PLAY logo"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="right close">
+          <img
+            class="searchIcon"
+            src="images/magnifyingglass.png"
+            alt="search icon"
+          />
+          <img class="bagIcon" src="images/bag rounded.png" alt="bag icon" />
+          <div class="burgerBox"><span class="burgerIcon"></span></div>
+        </div>
+      </div>
+      <div class="navWrapShop hidden submenu">
+        <ul class="mainlist">
+          <li>
+            <a href="product-list.html">Bags</a>
+            <ul class="types">
+              <li><a href="product-list.html">Crossbody bags</a></li>
+              <li><a href="product-list.html">Shoulder bags</a></li>
+              <li><a href="product-list.html">Mini bags</a></li>
+              <li><a href="product-list.html">Tote bags</a></li>
+              <li><a href="product-list.html">Bumbags</a></li>
+              <li><a href="product-list.html">Wallets</a></li>
+              <li><a href="product-list.html">Care Products</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="product-list.html">Clothing</a>
+            <ul class="types">
+              <li><a href="product-list.html">Tops</a></li>
+              <li><a href="product-list.html">Bottoms</a></li>
+              <li><a href="product-list.html">Accessories</a></li>
+              <li><a href="product-list.html">Accessories</a></li>
+              <li><a href="product-list.html">Bags</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="product-list.html">Collections</a>
+            <ul class="types">
+              <li><a href="product-list.html">Snow Queen</a></li>
+              <li><a href="product-list.html">Recycle</a></li>
+              <li><a href="product-list.html">Classics</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <ul class="specials">
+              <li><a href="">SILFEN PLAY</a></li>
+              <li><a href="product-list.html">New Arrivals</a></li>
+              <li><a href="product-list.html">Sale</a></li>
+              <li><a href="product-list.html">Eco Friendly</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div class="navWrapAbout hidden submenu">
+        <ul class="mainlist">
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Privacy Policy </a></li>
+          <li><a href="#">Terms and condition</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+        </ul>
+      </div>
+      <div class="globalham first hidden">
+        <ul>
+          <li><a class="hamnew" href="product-list.html">New Arrivals</a></li>
+          <li class="hamshop">
+            <a href="product-list.html">Shop</a
+            ><img
+              class="arrow shoparrow"
+              src="images/openfat.png"
+              alt="open arrow"
+            />
+          </li>
+          <li><a class="hamsale" href="product-list.html">Sale</a></li>
+          <li class="hamabout">
+            <a href="about.html">About</a
+            ><img
+              class="arrow aboutarrow"
+              src="images/openfat.png"
+              alt="open arrow"
+            />
+          </li>
+          <li>
+            <a class="hamplay" href="silfenplay.html"
+              ><img
+                class="playLogo"
+                src="images/playlogo.png"
+                alt="SILFEN PLAY logo"
+            /></a>
+          </li>
+        </ul>
+        <div class="hamsearch">
+          <input class="searchbox" type="text" placeholder="Search" />
+          <img
+            class="hamsearchicon"
+            src="images/magnifyingglass.png"
+            alt="search icon"
+          />
+        </div>
+      </div>
+      <div class="globalham hidden second">
+        <ul>
+          <li><a href="product-list.html">Bags</a></li>
+          <li><a href="product-list.html">Clothes</a></li>
+          <li><a href="product-list.html">Collections</a></li>
+          <li><a href="product-list.html">New Arrivals</a></li>
+          <li><a href="product-list.html">Sale</a></li>
+          <li><a href="product-list.html">Eco Friendly</a></li>
+          <li>
+            <a href="silfenplay.html"
+              ><img
+                class="playLogo"
+                src="images/playlogo.png"
+                alt="SILFEN PLAY logo"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="globalham hidden third">
+        <ul class="mainlist">
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Privacy Policy </a></li>
+          <li><a href="#">Terms and condition</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="sustainability.html">Sustainability</a></li>
+        </ul>
+      </div>
     </header>
+
     <main>
       <div class="product-list-breadcrumbs">
         <a href="#">
@@ -397,6 +545,7 @@
         </section>
       </div>
     </main>
+
     <div class="shoppingcartwrapper hidden">
       <img class="cross" src="images/cross.png" alt="cross for closing" />
       <div class="emptybasket hidden">
