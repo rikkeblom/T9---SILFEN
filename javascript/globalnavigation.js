@@ -19,12 +19,16 @@ function move() {
     document
       .querySelector(".aboutarrow")
       .addEventListener("click", openhamabout);
+    document.querySelector(".bagIcon").classList.add("hidden");
+    document.querySelector(".right").style.width = "3.20rem";
     ham = ham + 1;
     console.log("Hamburger menu is open");
   } else {
     document.querySelector(".first").classList.add("hidden");
     document.querySelector(".second").classList.add("hidden");
     document.querySelector(".third").classList.add("hidden");
+    document.querySelector(".bagIcon").classList.remove("hidden");
+    document.querySelector(".right").style.width = "6rem";
     ham = ham - 1;
     console.log("Hamburger menu is closed");
   }
