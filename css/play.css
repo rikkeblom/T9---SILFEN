@@ -1,0 +1,94 @@
+/* ------------ DESCRIPTION SECTION ------------- */
+.descriptionsection {
+  margin: 4rem auto;
+  width: min(calc(100% - 8rem), 40rem);
+}
+
+/* ------------ PRODUCT SECTION -------------- */
+.product-playlist img {
+  height: 10rem;
+  width: 8rem;
+  border: 1px red solid;
+}
+
+.productsection {
+  margin: 0 auto 4rem auto;
+  display: block;
+  overflow: hidden;
+  width: calc(100% - 8rem);
+}
+
+.product-playlist-wrap {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.playproductarrow {
+  transform: rotate(-90deg);
+  height: 1.2rem;
+}
+
+.productsectionlink {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  margin-left: auto;
+  margin-top: 1rem;
+  width: 15.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .silfenpagebanner {
+    background-image: url(../images/silfenplay.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 35rem;
+    display: block;
+  }
+
+  .transparentyellow {
+    background: rgba(221, 221, 69, 0.75);
+    width: 100%;
+    display: block;
+  }
+
+  .playlogobannersmall {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
+  .playlogobannerlarge {
+    display: none;
+  }
+  .productsection {
+    display: none;
+  }
+  .productsection {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .silfenpagebanner {
+    background-image: url(../images/silfenplaybig.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 35rem;
+    display: block;
+  }
+  .playlogobannersmall {
+    display: none;
+  }
+  .playlogobannerlarge {
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+    padding-top: 15rem;
+  }
+}
