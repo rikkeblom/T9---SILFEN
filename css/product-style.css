@@ -88,8 +88,11 @@
 .details-title>img {
     width: 0.7rem;
     height: auto;
-    transform: rotate(45deg);
     margin-left: 0.5rem;
+}
+
+.materials>img {
+    transform: rotate(45deg);
 }
 
 /*suggested products*/
@@ -161,6 +164,40 @@ figure {
 
     .information {
         grid-column: 3/4;
+    }
+
+    .more-details {
+        display: grid;
+        grid: 1fr 1fr/ 1fr 1fr;
+    }
+
+    .details-title {
+        grid-row: 1/2;
+    }
+
+    .measurments {
+        grid-column: 1/2;
+    }
+
+    .checked-section {
+        border-bottom: 3px solid black;
+    }
+
+    .unchecked-section {
+        border-bottom: 1px solid var(--light-grey);
+    }
+
+    .materials {
+        grid-column: 2/3;
+    }
+
+    .more-details>p {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+
+    .details-title>img {
+        display: none;
     }
 
     .suggestions {

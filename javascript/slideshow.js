@@ -11,7 +11,7 @@ function applyCarousel() {
         
         function carousel() {
           let i;
-          const productImage = document.querySelectorAll('.product-photo');
+          const productImage = document.querySelectorAll('.slideshow-img');
           for (i = 0; i < productImage.length; i++) {
             productImage[i].style.display = 'none';  
           }
@@ -20,5 +20,7 @@ function applyCarousel() {
           productImage[imageIndex-1].style.display = 'block';  
           setTimeout(carousel, 4000); // Change image every 4 seconds
         }
+    } else {
+
     }
 }
