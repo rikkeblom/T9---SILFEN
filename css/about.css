@@ -1,0 +1,175 @@
+#contact_container,
+#contact_form {
+  margin-top: 8%;
+  margin-bottom: 8%;
+
+  /* aligns, but leaves things centered but then there is scroll */
+  /* justify-items: center; */
+  max-width: 100%;
+}
+
+img {
+  width: 100%;
+  max-height: 50vw;
+  height: auto;
+  object-fit: cover;
+  background-size: 100%;
+}
+
+#green_banner {
+  background-color: var(--main-color-75);
+  padding: 0.7rem 0.9rem;
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--heading-font);
+  box-shadow: none;
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
+  width: 100%;
+  height: 10vw;
+  margin-top: 20%;
+  margin-bottom: 20%;
+}
+
+q {
+  width: 80%;
+}
+p,
+q,
+#about_info {
+  text-align: justify;
+  justify-content: center;
+  /* border-top: #000000 solid thin; */
+}
+
+/* p,
+q:after { */
+/* this adds an extra invisible line, so any other line is justified */
+/* content: "";
+  display: inline-block;
+  width: 100%;
+  vertical-align: top;
+} */
+
+#sustainability_text {
+  font-size: 4rem;
+}
+
+#contact_form {
+  width: 80%;
+}
+
+/* CODE FROM W3 SCHOOL */
+input[type="text"],
+select,
+textarea,
+input[type="email"],
+input[type="tel"] {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 2px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+#about_text {
+  position: absolute;
+  bottom: 70%;
+  color: white;
+  text-align: center;
+
+  width: 100%;
+  font-size: 1.8rem;
+}
+#about_quote,
+#d,
+#b {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+/* WEB */
+@media only screen and (min-width: 901px) {
+  .banner_img img,
+  img {
+    width: 100%;
+    max-height: 27vw;
+    height: auto;
+    object-fit: cover;
+    background-size: 100%;
+  }
+
+  #about_wrap {
+    display: grid;
+    grid-template-areas:
+      "a b"
+      "d c";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #contact_container {
+    display: grid;
+    grid-template-areas: "cont form";
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 40px;
+    /* width: fixed;
+    margin: auto; */
+
+    /* margin-left: 80px;
+    margin-right: 80px; */
+  }
+
+  #b,
+  #d {
+    justify-self: center;
+    margin-bottom: 8%;
+    width: 60%;
+    margin-left: 10%;
+    margin-top: 15%;
+    margin-bottom: 8%;
+    border-top: #000000 solid thin;
+  }
+
+  #green_banner {
+    display: none;
+  }
+
+  #a {
+    grid-area: a;
+  }
+  #b {
+    grid-area: b;
+  }
+  #c {
+    grid-area: c;
+  }
+  #d {
+    grid-area: d;
+  }
+  #contact_wrap {
+    grid-area: cont;
+    /* justify-self: center;
+    overflow: hidden; */
+  }
+  #contact_form {
+    grid-area: form;
+    margin-top: -2%;
+  }
+
+  #about_text {
+    position: absolute;
+    bottom: 35%;
+    color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+  }
+  #about_quote {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
