@@ -4,15 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="checkoutstyle.css">
+    <link rel="stylesheet" href="creditcard.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
 
     
 </head>
+
+    
+
+    
+ 
 <body>
+  
     <div class="order">
+      <span id="dots">Order Summary Items</span>
+    
+    
+      <span id="content">
+    
+        </span>
+    
+    <button onclick="readMoreFunction()" id="buttonReadMore">MY ORDER</button>
     </div>
+
+    
+   
+
+
+    <div class="container">
+
 
             <span id="username">
                 <h3>Contact</h3>
@@ -29,9 +50,11 @@
                 <span id="dicountbox">
                     <label for="discount"><i class="fa fa-envelope"></i> </label>
                     <input type="text" id="discount" name="discount" >
-                    <div class="discountbtn">Submit</div>
-                </span>
+                    <input type="submit" value= "Submit" class="btn">
+                  </span>
                 <div class="col-50">
+                  <div class="container">
+
                     <h3>Payment</h3>
                     <label for="fname">Accepted Cards</label>
                     <div class="icon-container">
@@ -40,6 +63,7 @@
                       <i class="fa fa-cc-mastercard" style="color:red;"></i>
                       <i class="fa fa-cc-discover" style="color:orange;"></i>
                     </div>
+            
                     <label for="cname">Name on Card</label>
                     <input type="text" id="cname" name="cardname" placeholder="John More Doe">
                     <label for="ccnum">Credit card number</label>
@@ -47,28 +71,25 @@
                     <label for="expmonth">Exp Month</label>
                     <input type="text" id="expmonth" name="expmonth" placeholder="September">
         
-                    <div class="row">
-                      <div class="col-50">
                         <label for="expyear">Exp Year</label>
                         <input type="text" id="expyear" name="expyear" placeholder="2018">
-                      </div>
-                      <div class="col-50">
+                      
                         <label for="cvv">CVV</label>
                         <input type="text" id="cvv" name="cvv" placeholder="352">
-                      </div>
-                    </div>
-                  </div>
-        
-                </div>
+                    
                 <label>
-                  <input type="checkbox" checked="checked" name="sameadr"> Mobile Pay
+                  <input type="checkbox" checked="checked" name="method"> Mobile Pay
                 </label>
+              </div>
                 <input type="submit" value="Continue to checkout" class="btn">
             </form>
+          </div>
 
 
+          
     
-   
+          <script src="creditcard.js"></script>
+
 </body>
 </html>
 
