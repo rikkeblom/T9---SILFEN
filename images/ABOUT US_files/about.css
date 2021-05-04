@@ -2,16 +2,10 @@
 #contact_form {
   margin-top: 8%;
   margin-bottom: 8%;
+
   /* aligns, but leaves things centered but then there is scroll */
   /* justify-items: center; */
   max-width: 100%;
-}
-
-#contact_container {
-  margin-left: 15%;
-}
-#contact_container {
-  margin-right: 15%;
 }
 
 img {
@@ -136,7 +130,7 @@ input[type="tel"] {
     margin-left: 10%;
     margin-top: 15%;
     margin-bottom: 8%;
-    border-top: #000000 solid thin;
+    /* border-top: #000000 solid thin; */
   }
 
   #green_banner {
