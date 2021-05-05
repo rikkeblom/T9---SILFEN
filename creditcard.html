@@ -18,17 +18,52 @@
 <body>
   
     <div class="order">
-      <span id="dots">Order Summary Items</span>
+      <span id="dots"></span>
     
     
       <span id="content">
+        <div class="receipt">
+          <h1>Order Summary</h1>
+          <div class="payments">
+             <table>
+                <tr>
+                   <td><p>Product 1</p></td>
+                   <td><p>$22.00</p></td>
+                </tr>
+                <tr>
+                   <td><p>Product 2</p></td>
+                   <td><p>$13.00</p></td>
+                </tr>
+                <tr>
+                   <td><p>Product 3</p></td>
+                   <td><p>$13.00</p></td>
+                </tr>
+                <tr>
+                   <td><p>Product 4</p></td>
+                   <td><p>$7.00</p></td>
+                </tr>
+             </table>
+             <table class="total">
+                <tr>
+                   <td><p>Total</p></td>
+                   <td><p>$52.00</p></td>
+                </tr>
+             </table>
+             <a class="pay">
+                <div>
+                   <p>Pay</p>
+                </div>
+             </a>
+          </div>
+        </div>
+        
     
         </span>
     
     <button onclick="readMoreFunction()" id="buttonReadMore">MY ORDER</button>
     </div>
-
     
+
    
 
 
@@ -58,10 +93,11 @@
                     <h3>Payment</h3>
                     <label for="fname">Accepted Cards</label>
                     <div class="icon-container">
-                      <i class="fa fa-cc-visa" style="color:navy;"></i>
-                      <i class="fa fa-cc-amex" style="color:blue;"></i>
-                      <i class="fa fa-cc-mastercard" style="color:red;"></i>
-                      <i class="fa fa-cc-discover" style="color:orange;"></i>
+                      <label class="radio"> <input type="radio" name="card" value="payment"> <span><img width="30" src="https://img.icons8.com/color/48/000000/mastercard.png" /></span> </label>
+
+                <label class="radio"> <input type="radio" name="card" value="payment"> <span><img width="30" src="https://img.icons8.com/officel/48/000000/visa.png" /></span> </label>
+                <label class="radio"> <input type="radio" name="card" value="payment"> <span><img width="30" src="https://img.icons8.com/ultraviolet/48/000000/amex.png" /></span> </label>
+                <label class="radio"> <input type="radio" name="card" value="payment"> <span><img width="30" src="https://img.icons8.com/officel/48/000000/paypal.png" /></span> </label>
                     </div>
             
                     <label for="cname">Name on Card</label>
