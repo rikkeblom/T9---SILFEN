@@ -43,19 +43,8 @@ q {
 p,
 q,
 #about_info {
-  text-align: justify;
-  justify-content: center;
-  /* border-top: #000000 solid thin; */
+  text-align: left;
 }
-
-/* p,
-q:after { */
-/* this adds an extra invisible line, so any other line is justified */
-/* content: "";
-  display: inline-block;
-  width: 100%;
-  vertical-align: top;
-} */
 
 #sustainability_text {
   font-size: 4rem;
@@ -84,7 +73,7 @@ input[type="tel"] {
 #about_text {
   position: absolute;
   bottom: 80%;
-  color: hotpink;
+  color: white;
   text-align: center;
   width: 100%;
   font-size: 1.8rem;
@@ -136,7 +125,6 @@ input[type="tel"] {
     margin-left: 10%;
     margin-top: 15%;
     margin-bottom: 8%;
-    border-top: #000000 solid thin;
   }
 
   #green_banner {
@@ -168,7 +156,7 @@ input[type="tel"] {
   #about_text {
     position: absolute;
     bottom: 75%;
-    color: hotpink;
+    color: white;
     text-align: center;
     width: 100%;
     font-size: 3rem;
