@@ -29,7 +29,7 @@ function showProductList(products) {
         //console.log(product);
         clone.querySelector('.product-display-pl>h1').textContent = product.title;
         clone.querySelector('.product-display-pl>h2>span').textContent = product.price;
-        clone.querySelector('.product-display-pl>img').src = product.images[0];
+        clone.querySelector('.pl-img-box>img').src = product.images[0];
         clone.querySelector('a.product-link').href = `product-page.html?q=${product.title}`;
        
         //apend
