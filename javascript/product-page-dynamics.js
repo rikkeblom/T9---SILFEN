@@ -38,6 +38,14 @@ function showProduct(product) {
         document.querySelector('.gallery').appendChild(clone);
         document.querySelector('.main-img-box').appendChild(clone);
     })
+
+    const productColours = product[0].color;
+    const productColoursTemplate = document.querySelector('.colours-template').content;
+    productColours.forEach(colour => {
+      const cloneDiv = productColoursTemplate.cloneNode(true);
+      cloneDiv.querySelector('.color-circle').style.background = colour;
+      document.querySelector('.colour-selection').appendChild(cloneDiv);
+    })
 }
 
 //onclick="currentPhoto()"
